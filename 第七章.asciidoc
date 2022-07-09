@@ -100,6 +100,8 @@ Parity 有一个用于访问JSON RPC接口的Web控制台，但在这里我们�
 curl --data '{"method":"parity_nextNonce","params":["0x9e713963a92c02317a681b9bb3065a8249de124f"],"id":1,"jsonrpc":"2.0"}' -H "Content-Type: application/json" -X POST localhost:8545
 
 {"jsonrpc":"2.0","result":"0x32","id":1}
+
+{"jsonrpc":"2.0","id":1,"error":{"code":-32601,"message":"the method parity_nextNonce does not exist/is not available"}}
 ----
 
 [[gaps_nonce]]
